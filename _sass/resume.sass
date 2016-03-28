@@ -2,7 +2,9 @@
 
 $grey :#D8D8D8
 $light-grey :#e4e1e1
-$blue: #3043c1
+$blue: rgba(#3043c1, 0.77)
+$dark-blue: #03518a
+$teal: #0aadad
 
 
 
@@ -23,6 +25,13 @@ header
   background-size: cover
   height: 100vh
 
+.bg-image
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  z-index: -3
+  position: static
+
 .resume
   position: relative
   display: block
@@ -32,3 +41,23 @@ header
 .big-icon
   font-size: 4.5em
   color: $blue
+
+.contact-page
+  position: relative
+  height: 100%
+
+.contact-box
+  position: absolute
+  float: left
+  z-index: 10
+  background-color: $dark-blue
+  color: white
+  height: 60vh
+  width: 30%
+  margin-left: 22%
+  margin-top: 10%
+
+.testimonials-section
+  background-color: $teal
+  overflow: hidden
+  height: 100vh
