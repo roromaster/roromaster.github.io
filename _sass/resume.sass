@@ -4,8 +4,9 @@ $grey :#D8D8D8
 $light-grey :#e4e1e1
 $blue: rgba(#3043c1, 0.77)
 $dark-blue: #03518a
-$teal: #0aadad
-
+$teal: #036681
+$dark-teal: #013a4a
+$dark-teal-2: rgba(#013a4a, 0.47)
 
 
 header
@@ -20,10 +21,21 @@ header
 
 
 .intro
+  position: relative
   background-image: url(/assets/img/background-main.jpg)
   background-repeat: no-repeat
   background-size: cover
   height: 100vh
+
+.intro-text
+  position: absolute
+  float: right
+  bottom: 60px
+  right: 40px
+  color: white
+  background-color: $dark-teal-2
+  padding: 10px 10px 10px 10px
+  border-radius: 20px
 
 .bg-image
   background-repeat: no-repeat
@@ -58,6 +70,30 @@ header
   margin-top: 10%
 
 .testimonials-section
+  position: relative
   background-color: $teal
+  color: white
   overflow: hidden
-  height: 100vh
+
+.testimonial-dark
+
+
+.testimonial-content
+  background-color: $dark-teal
+  font-size: 12px
+  padding-left: 10px
+  padding-top: 10px
+  padding-right: 10px
+  padding-bottom: 10px
+
+.padding-lg
+  padding-left: 22%
+
+.margin-b-50
+  margin-left: 30%
+
+.margin-b-0
+  margin-left: 30%
+
+.margin-b-60
+  margin-left: 30%
