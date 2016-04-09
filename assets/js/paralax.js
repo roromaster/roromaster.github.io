@@ -30,7 +30,7 @@ if (wScroll <= pContainerHeight) {
 
     $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top)*0.3 +'px'});
 
-    var opacity = (wScroll - $('.large-window').offset().top +200) / (wScroll / 7);
+    var opacity = (wScroll - $('.large-window').offset().top +100) / (wScroll / 7);
 
     $('.window-tint').css({'opacity': opacity});
 
