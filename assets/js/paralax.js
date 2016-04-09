@@ -4,15 +4,14 @@ $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
 
-  if (wScroll <= pContainerHeight) {
 
-    $('.intro-text').css({
-      'transform' : 'translate('+ wScroll/2  +'%, '+ wScroll /2 +'%)'
-    });
-  }
+if (wScroll <= pContainerHeight) {
+  $('.intro-text').css({
+    'transform': 'translate(0, -' + wScroll / 5 + '%)'
+  });
+}
+// Landing Elements
 
-
-  // Landing Elements
   if(wScroll > $('.testimonials-section').offset().top - ($(window).height() / 1.2)) {
 
     $('.testimonials-section .testimonial').each(function(i){
@@ -23,15 +22,15 @@ $(window).scroll(function(){
     });
 
   }
-  
+
 
 
   // Promoscope
   if(wScroll > $('.large-window').offset().top - $(window).height()){
 
-    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top) +'px'});
+    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top)*0.3 +'px'});
 
-    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
+    var opacity = (wScroll - $('.large-window').offset().top +200) / (wScroll / 7);
 
     $('.window-tint').css({'opacity': opacity});
 
